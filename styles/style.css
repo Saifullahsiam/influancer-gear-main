@@ -11,10 +11,9 @@ this is coommon all style
 
 body {
     font-family: 'Poppins', sans-serif;
-    position: relative;
     margin: 0px;
-    width: 1440px;
-    height: 3306px;
+    width: 100%;
+    height: 100%;
     background: #FFFFFF;
 }
 
@@ -27,24 +26,27 @@ body {
 header {
     display: flex;
     width: 100%;
+    margin-top: 80px;
+
 }
 
 
 .header-main {
-    position: absolute;
-    left: 8.33%;
-    right: 74.79%;
-    top: 2.63%;
-    bottom: 95.79%;
+    width: 40%;
+    margin-left: 100px;
 
+    border: 2px solid seagreen;
 }
 
+
+
+
 nav {
-    position: absolute;
-    width: 463px;
-    height: 36px;
-    left: 857px;
-    top: 95px;
+    width: 60%;
+    padding-top: 10px;
+    margin-left: 60px;
+
+    border: 3px solid slateblue;
 
 }
 
@@ -53,7 +55,6 @@ ul,
 li {
     display: flex;
     font-weight: 600;
-    font-size: 16px;
     column-gap: 34px;
 }
 
@@ -69,10 +70,15 @@ nav,
 li,
 a {
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
     color: black;
 }
+
+.fa-magnifying-glass {
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+}
+
 
 
 
@@ -88,18 +94,23 @@ start journey and camara section
 start journey section
 --------------------- */
 .journey-camara {
+    width: 100%;
     display: flex;
+    margin-top: 50px;
 
+
+
+    border: 2px solid saddlebrown;
 
 }
 
-.journey {
-    position: absolute;
-    width: 582px;
-    height: 270px;
-    left: 120px;
-    top: 285px;
 
+
+.journey {
+    width: 50%;
+    padding-left: 100px;
+
+    border: 2px solid springgreen;
 }
 
 .journey-header {
@@ -120,13 +131,22 @@ start journey section
 
 }
 
-.camara {
-    position: absolute;
+.carcle {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    opacity: 0.55;
+    width: 475px;
+    height: 475px;
 
+    border: 2px solid lightgreen;
+}
+
+.camara {
     width: 440px;
     height: 414px;
-    left: 835px;
-    top: 211px;
+    padding-left: 20px;
+    padding-top: 30px;
+
 
 }
 
@@ -135,15 +155,37 @@ start journey section
 start marketplace section
 --------------------- */
 
-.marketplace {
-    position: absolute;
+.line1 {
     width: 1110px;
-    height: 110px;
-    left: 165px;
-    top: 725px;
-    border: 2px solid saddlebrown;
+    height: 1px;
+    margin-left: 135px;
+    margin-top: 95px;
+
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
 }
 
+
+.marketplace {
+    width: 910px;
+
+    margin-left: 180px;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    border: 2px solid saddlebrown;
+
+}
+
+.line2 {
+    width: 1110px;
+    height: 1px;
+    margin-left: 135px;
+    margin-top: 30px;
+
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
 
 
 
@@ -152,15 +194,13 @@ start content products section
 --------------------- */
 
 .content-products {
-    position: absolute;
-    width: 1047px;
+    width: 1100px;
     height: 1662px;
-    left: 196px;
-    top: 935px;
-
-
+    padding-left: 165px;
+    border: 2px solid gold;
 
 }
+
 
 
 .products-header {
@@ -176,6 +216,7 @@ start content products section
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
+    margin: 0px;
 }
 
 
@@ -242,6 +283,13 @@ start content products section
     color: rgba(224, 44, 109, 0.87);
     font-size: 16px;
 
+
+    width: 99px;
+    height: 24px;
+    margin-left: 924px;
+
+
+
 }
 
 
@@ -250,28 +298,25 @@ start featured style
 ---------------------- */
 
 .featured {
+    width: 100%;
     display: flex;
-    position: absolute;
-    width: 1110px;
-    height: 270px;
-    left: 165px;
-    top: 2697px;
+    margin-top: 50px;
+
+    border: 2px solid springgreen;
 
 }
 
 .featured-img {
-    position: absolute;
-    width: 404px;
+    padding-left: 100px;
+    width: 40%;
     height: 270px;
-    left: 40px;
+
 }
 
 
 .featured-contant {
-    position: absolute;
-    width: 610px;
-    height: 224px;
-    left: 525px;
+    /* width: 610px;
+    left: 525px; */
 
 
 }
@@ -309,20 +354,23 @@ start footer section
 
 
 footer {
-    position: absolute;
-    width: 1440px;
+    position: relative;
+    width: 100%;
     height: 239px;
-    top: 3067px;
+    margin-top: 70px;
     background: #0A0826;
+
+    border: 2px solid skyblue;
 }
 
 .footer-content {
     position: absolute;
     width: 262px;
-    height: 139px;
-    left: 589px;
+    left: 549px;
     margin-top: 40px;
     text-align: center;
+
+    border: 2px solid sandybrown;
 }
 
 
@@ -354,4 +402,52 @@ footer {
 
 .fa-brands {
     color: #FFFFFF;
+}
+
+
+
+
+/*---------------------------
+      Midia Quaries 
+      --------------------------*/
+
+/* Use for Mobile device */
+
+
+@media only screen and (max-width:688px) {
+
+
+    header {
+        flex-direction: column;
+    }
+
+    .journey-camara {
+        flex-direction: column-reverse;
+    }
+
+
+    .products,
+    .marketplace {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        grid-row-gap: 30px;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+
+
+    .product {
+        padding-left: -40px;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+
+
+
 }
